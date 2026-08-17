@@ -36,6 +36,26 @@ Front-End → Fetch API → Express → MySQL
 
 ---
 
+---
+
+## Melhorias de UI/UX
+
+Foram aplicadas melhorias de interface e experiência do usuário para tornar o sistema mais organizado, intuitivo e responsivo.
+
+- **Layout organizado:** divisão da interface em áreas de cadastro, indicadores e inventário.
+- **Hierarquia visual:** utilização de títulos, subtítulos, cores e espaçamentos para facilitar a identificação das informações.
+- **Indicadores de status:** apresentação visual dos equipamentos como disponíveis, em uso, em manutenção ou indisponíveis.
+- **Feedback das ações:** mensagens visuais informam ao usuário quando uma operação foi realizada com sucesso ou quando ocorreu algum erro.
+- **Validação de formulário:** campos obrigatórios recebem indicação visual quando estão preenchidos corretamente ou quando precisam ser corrigidos.
+- **Busca de equipamentos:** campo de pesquisa permite localizar equipamentos por nome, categoria, patrimônio, localização ou status.
+- **Modal de confirmação:** a exclusão de um equipamento exige confirmação antes de ser realizada, evitando exclusões acidentais.
+- **Modo de edição:** ao selecionar um equipamento para edição, seus dados são carregados automaticamente no formulário.
+- **Indicador da API:** a interface informa visualmente se a API está conectada ou indisponível.
+- **Atualização automática:** após cadastrar, editar ou excluir um equipamento, a tabela e os indicadores são atualizados sem necessidade de recarregar a página.
+- **Design responsivo:** a interface se adapta a diferentes tamanhos de tela, incluindo dispositivos menores.
+- **Estados de carregamento:** botões exibem mensagens como "Carregando...", "Cadastrando..." e "Excluindo..." durante as operações.
+- **Prevenção de ações duplicadas:** botões de ação são temporariamente desabilitados durante requisições para evitar operações repetidas.
+
 ## Tecnologias
 
 - HTML5
