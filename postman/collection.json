@@ -1,0 +1,49 @@
+{
+  "info": {
+    "name": "EquipManager API",
+    "description": "Coleção de testes CRUD da API EquipManager.",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "variable": [
+    { "key": "baseUrl", "value": "http://localhost:3000" },
+    { "key": "id", "value": "1" }
+  ],
+  "item": [
+    {
+      "name": "GET - Listar equipamentos",
+      "request": { "method": "GET", "header": [], "url": "{{baseUrl}}/equipamentos" }
+    },
+    {
+      "name": "GET - Buscar por ID",
+      "request": { "method": "GET", "header": [], "url": "{{baseUrl}}/equipamentos/{{id}}" }
+    },
+    {
+      "name": "POST - Cadastrar equipamento",
+      "request": {
+        "method": "POST",
+        "header": [{ "key": "Content-Type", "value": "application/json" }],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"nome\": \"Notebook Dell\",\n  \"categoria\": \"Informática\",\n  \"patrimonio\": \"NT001\",\n  \"localizacao\": \"Laboratório 01\"\n}"
+        },
+        "url": "{{baseUrl}}/equipamentos"
+      }
+    },
+    {
+      "name": "PUT - Atualizar equipamento",
+      "request": {
+        "method": "PUT",
+        "header": [{ "key": "Content-Type", "value": "application/json" }],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"nome\": \"Notebook Dell Atualizado\",\n  \"categoria\": \"Informática\",\n  \"localizacao\": \"Laboratório 02\",\n  \"status\": \"Em uso\"\n}"
+        },
+        "url": "{{baseUrl}}/equipamentos/{{id}}"
+      }
+    },
+    {
+      "name": "DELETE - Remover equipamento",
+      "request": { "method": "DELETE", "header": [], "url": "{{baseUrl}}/equipamentos/{{id}}" }
+    }
+  ]
+}
